@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NotBored">
         <activity
-            android:name=".presentation.ActivitiesActivity"
+            android:name=".presentation.activities.ActivitiesActivity"
             android:exported="false" />
         <activity
             android:name=".presentation.TermsAndConditionsActivity"

@@ -4,8 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.widget.addTextChangedListener
-import com.example.notbored.R
 import com.example.notbored.databinding.ActivityMainBinding
+import com.example.notbored.presentation.activities.ActivitiesActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,8 +16,13 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.etParticipants.transformationMethod = null //deletes bullets in the input
         binding.etParticipants.addTextChangedListener {
-            println(it.toString()) //validations for button
+            if(it.toString() == ""){
+                binding.btnStart.isEnabled = true
+            } else {
+                binding.btnStart.isEnabled = it.toString().toInt() >= 1
+            }
         }
 
         binding.btnStart.setOnClickListener {

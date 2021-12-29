@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NotBored">
         <activity
-            android:name=".MainActivity"
+            android:name=".presentation.ActivitiesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.TermsAndConditionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

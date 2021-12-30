@@ -2,7 +2,8 @@ package com.example.notbored.presentation.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.notbored.R
+import androidx.appcompat.app.ActionBar
+import com.example.notbored.databinding.ActivitiesToolbarBinding
 import com.example.notbored.databinding.ActivityActivitiesBinding
 import com.example.notbored.presentation.activities.recyclerview.ActivitiesAdapter
 
@@ -18,6 +19,15 @@ class ActivitiesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityActivitiesBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        //Set up custom toolbar
+        val toolbarBinding = ActivitiesToolbarBinding.inflate(layoutInflater)
+        supportActionBar?.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM
+        supportActionBar?.customView = toolbarBinding.root
+
+        toolbarBinding.btnRandom.setOnClickListener {
+            //Set Intent to Random screen
+        }
 
         //intent.getStringExtra("participants")
 

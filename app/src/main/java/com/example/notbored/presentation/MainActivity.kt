@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.etParticipants.transformationMethod = null //deletes bullets in the input
         binding.etParticipants.addTextChangedListener {
-            if(it.toString() == ""){
+            if(it.toString().isBlank()){
                 binding.btnStart.isEnabled = true
             } else {
                 binding.btnStart.isEnabled = it.toString().toInt() >= 1

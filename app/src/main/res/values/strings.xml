@@ -38,4 +38,6 @@
         tempus purus et odio senectus sodales vulputate, ligula malesuada dis habitasse
         nullam pellentesque.
     </string>
+    <string name="example_suggestion">Example suggestion</string>
+    <string name="price">Price</string>
 </resources>

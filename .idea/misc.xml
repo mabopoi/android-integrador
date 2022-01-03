@@ -9,12 +9,13 @@
         <entry key="app/src/main/res/drawable/ic_baseline_format_list_bulleted_24.xml" value="0.34010416666666665" />
         <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.34010416666666665" />
         <entry key="app/src/main/res/layout/activities_item.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activities_toolbar.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activities_toolbar.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_activities.xml" value="0.11241100252056276" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_suggestion.xml" value="0.2667572463768116" />
         <entry key="app/src/main/res/layout/activity_terms_and_conditions.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/suggestion_toolbar.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_toolbar.xml" value="0.2667572463768116" />
+        <entry key="app/src/main/res/layout/suggestion_toolbar.xml" value="0.4156664560960202" />
       </map>
     </option>
   </component>

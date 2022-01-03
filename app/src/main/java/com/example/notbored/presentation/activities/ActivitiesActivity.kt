@@ -1,5 +1,6 @@
 package com.example.notbored.presentation.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.ActionBar
@@ -27,6 +28,8 @@ class ActivitiesActivity : AppCompatActivity() {
 
         toolbarBinding.btnRandom.setOnClickListener {
             //Set Intent to Random screen
+            val intent = Intent(this, SuggestionActivity::class.java)
+            startActivity(intent)
         }
 
         //intent.getStringExtra("participants")

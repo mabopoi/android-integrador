@@ -40,4 +40,11 @@
     </string>
     <string name="example_suggestion">Example suggestion</string>
     <string name="price">Price</string>
+    <string name="category">Category</string>
+    <string name="try_another">Try another</string>
+    <string name="medium">Medium</string>
+    <string name="free">Free</string>
+    <string name="low">Low</string>
+    <string name="high">High</string>
+    <string name="_1">1</string>
 </resources>

@@ -15,6 +15,7 @@ class ActivitiesActivity : AppCompatActivity() {
         "Education", "Recreational", "Social", "Diy",
         "Charity", "Cooking", "Relaxation", "Music", "Busywork"
     )
+    private var participants: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,18 +27,19 @@ class ActivitiesActivity : AppCompatActivity() {
         supportActionBar?.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM
         supportActionBar?.customView = toolbarBinding.root
 
+        participants = intent.getStringExtra("participants")
+
         toolbarBinding.btnRandom.setOnClickListener {
             //Set Intent to Random screen
             val intent = Intent(this, SuggestionActivity::class.java)
+            intent.putExtra("participants", participants)
             startActivity(intent)
         }
-
-        //intent.getStringExtra("participants")
 
         setUpRecyclerView()
     }
 
     private fun setUpRecyclerView() {
-        binding.rvActivities.adapter = ActivitiesAdapter(activitiesList)
+        binding.rvActivities.adapter = ActivitiesAdapter(activitiesList, participants)
     }
 }

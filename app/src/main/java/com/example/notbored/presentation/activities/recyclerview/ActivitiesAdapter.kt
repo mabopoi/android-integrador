@@ -5,7 +5,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.notbored.R
 
-class ActivitiesAdapter(private val activitiesList: List<String>) :
+class ActivitiesAdapter(private val activitiesList: List<String>,
+                        private val participants: String? = null) :
     RecyclerView.Adapter<ActivitiesItemViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ActivitiesItemViewHolder {
@@ -17,7 +18,7 @@ class ActivitiesAdapter(private val activitiesList: List<String>) :
 
     override fun onBindViewHolder(holder: ActivitiesItemViewHolder, position: Int) {
         val item = activitiesList[position]
-        holder.bind(item)
+        holder.bind(item, participants)
     }
 
     override fun getItemCount(): Int = activitiesList.size

@@ -18,24 +18,24 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/ivParticipants"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_baseline_person_24"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/tvParticipantsTitle"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="@+id/tvParticipantsTitle" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvParticipantsTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="220dp"
         android:text="@string/participants"
         app:layout_constraintEnd_toStartOf="@+id/tvParticipants"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/ivParticipants"
         app:layout_constraintTop_toBottomOf="@+id/tvSuggestionName" />
 
     <TextView
@@ -45,30 +45,30 @@
         android:text="@string/_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="@+id/textView" />
+        app:layout_constraintStart_toEndOf="@+id/tvParticipantsTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvParticipantsTitle" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/ivPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:src="@drawable/ic_baseline_attach_money_24"
-        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/tvPriceTitle"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/ivParticipants" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tvPriceTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/price"
         app:layout_constraintEnd_toStartOf="@+id/tvPrice"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintStart_toEndOf="@+id/ivPrice"
+        app:layout_constraintTop_toBottomOf="@+id/tvParticipantsTitle" />
 
     <TextView
         android:id="@+id/tvPrice"
@@ -78,7 +78,7 @@
         android:text="@string/medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toEndOf="@+id/tvPriceTitle"
         app:layout_constraintTop_toBottomOf="@+id/tvParticipants" />
 
     <ImageView
@@ -88,8 +88,8 @@
         android:src="@drawable/ic_baseline_format_list_bulleted_24"
         app:layout_constraintEnd_toStartOf="@+id/tvCategory"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintStart_toStartOf="@+id/ivPrice"
+        app:layout_constraintTop_toBottomOf="@+id/ivPrice" />
 
     <TextView
         android:id="@+id/tvCategory"
@@ -97,8 +97,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="@string/category"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintStart_toStartOf="@+id/tvPriceTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvPriceTitle" />
 
     <Button
         android:id="@+id/btnTryAnother"

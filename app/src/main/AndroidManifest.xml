@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NotBored">
         <activity
-            android:name=".presentation.activities.SuggestionActivity"
+            android:name=".presentation.SuggestionActivity"
             android:exported="false" />
         <activity
             android:name=".presentation.activities.ActivitiesActivity"

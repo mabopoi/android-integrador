@@ -4,26 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.activities.SuggestionActivity">
+    tools:context=".presentation.SuggestionActivity">
 
     <TextView
         android:id="@+id/tvSuggestionName"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
         android:text="@string/example_suggestion"
+        android:textAlignment="center"
+        android:textColor="@color/title"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/ivParticipants"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="26dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="1dp"
         android:src="@drawable/ic_baseline_person_24"
-        app:layout_constraintEnd_toStartOf="@+id/tvParticipantsTitle"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tvParticipantsTitle" />
 
@@ -31,10 +35,11 @@
         android:id="@+id/tvParticipantsTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="220dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="73dp"
         android:text="@string/participants"
-        app:layout_constraintEnd_toStartOf="@+id/tvParticipants"
-        app:layout_constraintHorizontal_bias="0.5"
+        android:textColor="@color/title"
+        android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/ivParticipants"
         app:layout_constraintTop_toBottomOf="@+id/tvSuggestionName" />
 
@@ -43,6 +48,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_1"
+        android:textAlignment="textEnd"
+        android:textColor="@color/title"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/tvParticipantsTitle"
@@ -50,55 +58,60 @@
 
     <ImageView
         android:id="@+id/ivPrice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_width="26dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="2dp"
         android:src="@drawable/ic_baseline_attach_money_24"
-        app:layout_constraintEnd_toStartOf="@+id/tvPriceTitle"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivParticipants" />
+        app:layout_constraintTop_toTopOf="@+id/tvPriceTitle" />
 
     <TextView
         android:id="@+id/tvPriceTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
         android:text="@string/price"
-        app:layout_constraintEnd_toStartOf="@+id/tvPrice"
-        app:layout_constraintHorizontal_bias="0.5"
+        android:textColor="@color/title"
+        android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/ivPrice"
-        app:layout_constraintTop_toBottomOf="@+id/tvParticipantsTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/ivParticipants" />
 
     <TextView
         android:id="@+id/tvPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="@string/medium"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/title"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvParticipants"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/tvPriceTitle"
-        app:layout_constraintTop_toBottomOf="@+id/tvParticipants" />
+        app:layout_constraintTop_toTopOf="@+id/tvPriceTitle" />
 
     <ImageView
         android:id="@+id/ivCategory"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="27dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="1dp"
         android:src="@drawable/ic_baseline_format_list_bulleted_24"
-        app:layout_constraintEnd_toStartOf="@+id/tvCategory"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/ivPrice"
-        app:layout_constraintTop_toBottomOf="@+id/ivPrice" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvCategory" />
 
     <TextView
         android:id="@+id/tvCategory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
         android:text="@string/category"
-        app:layout_constraintStart_toStartOf="@+id/tvPriceTitle"
-        app:layout_constraintTop_toBottomOf="@+id/tvPriceTitle" />
+        android:textColor="@color/title"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/ivCategory"
+        app:layout_constraintTop_toBottomOf="@+id/ivPrice" />
 
     <Button
         android:id="@+id/btnTryAnother"

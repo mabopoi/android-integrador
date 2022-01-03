@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.appcompat.app.ActionBar
 import com.example.notbored.databinding.ActivitiesToolbarBinding
 import com.example.notbored.databinding.ActivityActivitiesBinding
+import com.example.notbored.presentation.SuggestionActivity
 import com.example.notbored.presentation.activities.recyclerview.ActivitiesAdapter
 
 class ActivitiesActivity : AppCompatActivity() {

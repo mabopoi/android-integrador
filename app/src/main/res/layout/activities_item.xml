@@ -12,12 +12,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/activity"
+        android:textColor="@color/title"
         android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/ic_arrow_right_24"
@@ -25,5 +27,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ContentDescription" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="@color/title"
+        android:foregroundTint="@color/title"
+        android:scrollbarThumbHorizontal="@color/title"
+        android:scrollbarThumbVertical="@color/title"
+        android:scrollbarTrackHorizontal="@color/title"
+        android:scrollbarTrackVertical="@color/title"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/tvActivityName"
+        app:layout_constraintTop_toBottomOf="@+id/tvActivityName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

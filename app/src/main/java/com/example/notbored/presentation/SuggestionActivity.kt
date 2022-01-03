@@ -1,4 +1,4 @@
-package com.example.notbored.presentation.activities
+package com.example.notbored.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

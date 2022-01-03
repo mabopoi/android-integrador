@@ -4,7 +4,7 @@ import android.content.Intent
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.example.notbored.databinding.ActivitiesItemBinding
-import com.example.notbored.presentation.activities.SuggestionActivity
+import com.example.notbored.presentation.SuggestionActivity
 
 class ActivitiesItemViewHolder(view: View): RecyclerView.ViewHolder(view) {
 

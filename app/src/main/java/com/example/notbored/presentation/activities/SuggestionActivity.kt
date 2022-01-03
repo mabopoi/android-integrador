@@ -3,10 +3,12 @@ package com.example.notbored.presentation.activities
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.ActionBar
 import com.example.notbored.R
 import com.example.notbored.data.APIServiceSuggestion
 import com.example.notbored.data.RetrofitService
 import com.example.notbored.databinding.ActivitySuggestionBinding
+import com.example.notbored.databinding.SuggestionToolbarBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -25,10 +27,19 @@ class SuggestionActivity : AppCompatActivity() {
         participants = intent.getStringExtra("participants")
         type = intent.getStringExtra("type")
 
+        val toolbarBinding = SuggestionToolbarBinding.inflate(layoutInflater)
+        supportActionBar?.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM
+        supportActionBar?.customView = toolbarBinding.root
+
         type?.let {
             binding.tvCategory.visibility = View.INVISIBLE
             binding.ivCategory.visibility = View.INVISIBLE
+            toolbarBinding.tvSuggestionTitle.text = type
+        } ?: run {
+            toolbarBinding.tvSuggestionTitle.text = getString(R.string.random)
         }
+
+        toolbarBinding.btnGoBack.setOnClickListener { finish() }
 
         binding.btnTryAnother.setOnClickListener { getSuggestion() }
 

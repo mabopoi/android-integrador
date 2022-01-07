@@ -46,12 +46,13 @@ class SuggestionActivity : AppCompatActivity() {
         getSuggestion()
     }
 
-    private fun getSuggestion(){
+    private fun getSuggestion() {
         CoroutineScope(Dispatchers.IO).launch {
-            val call = RetrofitService.instance.create(APIServiceSuggestion::class.java).getSuggestion(participants, type)
+            val call = RetrofitService.instance.create(APIServiceSuggestion::class.java)
+                .getSuggestion(participants, type)
             val response = call.body()
             runOnUiThread {
-                if(call.isSuccessful){
+                if (call.isSuccessful) {
                     response?.let { //checks if response is null
                         it.error?.let { err -> //checks if there is an error
                             println(err)
@@ -67,7 +68,7 @@ class SuggestionActivity : AppCompatActivity() {
                             err
                         } ?: run {
                             binding.tvSuggestionName.text = response.activity
-                            binding.tvParticipants.text =  response.participants.toString()
+                            binding.tvParticipants.text = response.participants.toString()
                             binding.tvPrice.text = when {
                                 response.price == 0.0 -> getString(R.string.free)
                                 response.price > 0.0 && response.price <= 0.3 -> getString(R.string.low)

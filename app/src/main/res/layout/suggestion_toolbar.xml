@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="88dp"
             android:text="@string/example_suggestion"
-            android:textColor="@color/white"
+            android:textColor="@color/title"
             android:textSize="24sp"
             app:layout_constraintStart_toEndOf="@+id/btnGoBack"
             app:layout_constraintTop_toTopOf="parent" />

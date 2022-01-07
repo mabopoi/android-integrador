@@ -26,8 +26,8 @@
         android:layout_width="26dp"
         android:layout_height="29dp"
         android:layout_marginStart="76dp"
-        android:layout_marginTop="1dp"
         android:src="@drawable/ic_baseline_person_24"
+        app:layout_constraintBottom_toBottomOf="@+id/tvParticipantsTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tvParticipantsTitle" />
 
@@ -61,8 +61,8 @@
         android:layout_width="26dp"
         android:layout_height="27dp"
         android:layout_marginStart="76dp"
-        android:layout_marginTop="2dp"
         android:src="@drawable/ic_baseline_attach_money_24"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPriceTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tvPriceTitle" />
 
@@ -96,8 +96,8 @@
         android:layout_width="27dp"
         android:layout_height="28dp"
         android:layout_marginStart="76dp"
-        android:layout_marginTop="1dp"
         android:src="@drawable/ic_baseline_format_list_bulleted_24"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCategory"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tvCategory" />
 

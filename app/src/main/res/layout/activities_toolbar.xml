@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="250dp"
             android:text="@string/activities"
-            android:textColor="@color/white"
+            android:textColor="@color/title"
             android:textSize="24sp"
             app:layout_constraintEnd_toStartOf="@+id/btnRandom"
             app:layout_constraintStart_toStartOf="parent"
